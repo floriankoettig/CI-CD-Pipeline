@@ -6,7 +6,7 @@ public class IBANTest {
     @Test void IBANDE() {
         String myIBAN = "DE68210501700012345678";
         IBAN classUnderTest = new IBAN(myIBAN);
-        assertEquals(classUnderTest.check(myIBAN), false);
+        assertEquals(classUnderTest.check(myIBAN), true);
     }
 
     @Test void IBANWrong() {
